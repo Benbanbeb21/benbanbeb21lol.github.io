@@ -3,13 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Links</title>
+    <title>Embedded Websites</title>
+    <style>
+        iframe {
+            width: 100%;
+            height: 500px;
+            border: none;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Useful Links</h1>
-    <ul>
-        <li><a href="https://readtheory.org/auth/login" target="_blank">ReadTheory Login</a></li>
-        <li><a href="https://cheesy.ilovepretzels.shop/" target="_blank">Cheesy Pretzels Shop</a></li>
-    </ul>
+    <h1>Embedded Websites</h1>
+    <div class="container">
+        <iframe src="https://readtheory.org/auth/login" title="ReadTheory Login"></iframe>
+        <iframe src="https://cheesy.ilovepretzels.shop/" title="Cheesy Pretzels Shop"></iframe>
+    </div>
 </body>
 </html>
